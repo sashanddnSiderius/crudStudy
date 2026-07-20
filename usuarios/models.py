@@ -8,6 +8,7 @@ class Usuario(models.Model):
     telefone = models.CharField(max_length=15, default='Sem telefone')
     endereco = models.CharField(max_length=100, null=False, blank=False)
     data_nascimento = models.DateField(null=False, blank=False)
+    data_inscricao = models.DateTimeField(auto_now_add=True)
 
 def __str__(self):
         return self.name

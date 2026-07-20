@@ -1,0 +1,26 @@
+<h1>Cadastro de Usuários</h1>
+<form method="POST">
+
+    {% csrf_token %}
+
+    <label>Nome</label>
+    <input type="text" name="nome">
+
+    <label>Email</label>
+    <input type="text" name="email">
+
+    <label>CPF</label>
+    <input type="text" name="cpf">
+
+    <label>Telefone</label>
+    <input type="text" name="telefone">
+
+    <label>Endereço</label>
+    <input type="text" name="endereco">
+
+    <label>Data de Nascimento</label>
+    <input type="date" name="data_nascimento">
+
+    <br><br>
+
+    <button type="submit">Cadastrar</button>
